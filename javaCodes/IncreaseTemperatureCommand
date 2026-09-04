@@ -1,0 +1,13 @@
+public class IncreaseTemperatureCommand implements Command {
+
+    private Aircon aircon;
+
+    public IncreaseTemperatureCommand(Aircon aircon) {
+        this.aircon = aircon;
+    }
+
+    @Override
+    public void execute() {
+        aircon.increaseTemperature();
+    }
+}
